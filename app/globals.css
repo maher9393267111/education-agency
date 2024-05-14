@@ -1,0 +1,22 @@
+
+.testimonials .swiper-button-prev,
+.testimonials .swiper-button-next {
+  display: none !important;
+}
+
+
+.swiper-pagination-bullets {
+    display: none;
+  }
+  
+  .swpier {
+    padding-bottom: 160px !important;
+  }
+  .swiper-wrapper {
+    padding-bottom: 50px !important;
+  }
+  
+
+  .legalOverlay {
+    background: rgba(0, 0, 0, 0.3);
+  }

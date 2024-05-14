@@ -1,0 +1,15 @@
+
+rm -rf node_modules package-lock.json
+ git pull origin main
+git push -f origin master
+
+echo "# sanity_dash" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/maher9393267111/sanity_dash.git
+git push -u origin main
+
+
+--------------------
