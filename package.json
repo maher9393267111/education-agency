@@ -31,7 +31,13 @@
     "sanity-plugin-media": "^2.2.5",
     "styled-components": "^6",
     "swiper": "^9.4.1",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^2.3.0",
+    
+   "i18next": "^23.7.17",
+   "i18next-resources-to-backend": "^1.2.0",
+   "next-i18n-router": "^5.2.0",
+   "react-i18next": "^14.0.1"
+
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",

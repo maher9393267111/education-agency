@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "app/studio/[[...index]]", "components/slider.jsx"  ],
+, "app/studio/[[...index]]", "components/slider.jsx", "components/languageChanger.jsx"  ],
   "exclude": [
     "node_modules"
   ]

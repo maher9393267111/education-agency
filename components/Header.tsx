@@ -1,8 +1,13 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Accordion } from './ui/accordion';
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+
+  const { t } = useTranslation();
   return (
     <header className='flex items-center justify-center sm:justify-between space-x-2 font-bold px-10 py-5'>
       <div className='flex items-center space-x-2'>
@@ -15,7 +20,7 @@ const Header = () => {
             height={50}
           />
         </Link>
-        <h1>Pacio</h1>
+        <h1>  {t("book")}</h1>
       </div>
 
       <div>

@@ -1,6 +1,7 @@
-import '../../styles/globals.css';
-import Banner from '../../components/Banner';
-import Header from '../../components/Header';
+import '../../../styles/globals.css';
+import Banner from '../../../components/Banner';
+import Header from '../../../components/Header';
+import LanguageChangerOLD from '../../../components/languageChanger';
 
 export default function RootLayout({
   children,
@@ -19,10 +20,19 @@ export default function RootLayout({
 
 
       <body className='font-inter max-w-7xl mx-auto'>
-        <Header />
+
+ 
+        {/* <LanguageChangerOLD/> */}
+        {/* <Header /> */}
         <Banner />
 
         <>{children}</>
+
+
+     
+
+
+
       </body>
       
     </html>
