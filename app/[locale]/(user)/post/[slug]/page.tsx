@@ -9,6 +9,7 @@ import { RichTextComponents } from '../../../../../components/RichTextComponents
 type Props = {
   params: {
     slug: string;
+    locale:string
   };
 };
 
@@ -41,7 +42,7 @@ export async function generateStaticParams(){
 
 
 
-const PostSingle = async ({ params: { slug } }: Props) => {
+const PostSingle = async ({ params: { slug ,locale  } }: Props) => {
   const query = groq`
     //all the post data and also slug field (on studio) matches
     *[_type=='post' && slug.current == $slug][0]
