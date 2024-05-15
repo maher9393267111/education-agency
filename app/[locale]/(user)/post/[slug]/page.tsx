@@ -66,6 +66,8 @@ const PostSingle = async ({ params: { slug ,locale  } }: Props) => {
     <article className='px-10 pb-28'>
 
 
+{locale}
+
 {post &&
 
 

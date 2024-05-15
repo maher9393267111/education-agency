@@ -18,12 +18,17 @@ export default function LegalSearchCard({ data, animationDelay }) {
       data-aos="zoom-in"
       data-aos-delay={2}
     >
+      
       <div
         className={`absolute inset-0 ${isHovered && "scale-110"
           } transition duration-300 ease-in-out`}
       >
         <Image   src={urlFor(data.image).url()} fill className="object-cover" alt={heading} priority />
       </div>
+
+
+
+
       <div className={`
       
       ${isHovered && "bg-blue-400 opacity-7"}
