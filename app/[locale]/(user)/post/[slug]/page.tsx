@@ -5,6 +5,7 @@ import urlFor from '../../../../../lib/urlFor';
 import { PortableText} from '@portabletext/react';
 import { RichTextComponents } from '../../../../../components/RichTextComponents';
  import { Post } from '../../../../../typings';
+ import i18nConfig from "../../../../../i18nConfig";
 
 type Props = {
   params: {
@@ -37,6 +38,11 @@ export async function generateStaticParams(){
 }
 
 
+// export function generateStaticParams() {
+//   return i18nConfig.locales.map((locale) => ({ locale }));
+// }
+
+
 
 
 
@@ -58,6 +64,15 @@ const PostSingle = async ({ params: { slug ,locale  } }: Props) => {
 
   return (
     <article className='px-10 pb-28'>
+
+
+{post &&
+
+
+<div>
+
+
+
       <section className='space-y-2 border border-[#f7ab0a] text-white'>
         <div className='relative min-h-56 flex flex-col nmd:flex-row justify-between'>
           <div className='absolute top-0 w-full h-full opacity-10 blur-xs p-10'>
@@ -129,6 +144,8 @@ const PostSingle = async ({ params: { slug ,locale  } }: Props) => {
 </div>
 
 
+</div>
+}
     </article>
   );
 };

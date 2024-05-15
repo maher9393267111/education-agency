@@ -43,20 +43,20 @@ const HomePage = async ({ params: { locale } }) => {
 
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
-  if (previewData()) {
-    return (
-      <PreviewSuspense fallback={<Loading />}>
-        <PreviewBlogList query={query} />
-      </PreviewSuspense>
-    );
-  }
+  // if (previewData()) {
+  //   return (
+  //     <PreviewSuspense fallback={<Loading />}>
+  //       <PreviewBlogList query={query} />
+  //     </PreviewSuspense>
+  //   );
+  // }
 
   const posts = await client.fetch(query);
   const designs = await client.fetch(query2);
   console.log(designs)
   return <div>
 
-<TranslaionProvider 
+{/* <TranslaionProvider 
         resources={resources}
         locale={locale}
         namespaces={i18nNamespaces}
@@ -64,30 +64,14 @@ const HomePage = async ({ params: { locale } }) => {
 
 
  
-<LanguageChangerOLD/>
+<LanguageChangerOLD/> */}
 
 {locale}
 
 
 <Header/>
     
-{/* <Accordion type="single" collapsible>
-  <AccordionItem value="item-1">
-    <AccordionTrigger>Is it accessible?</AccordionTrigger>
-    <AccordionContent>
-      Yes. It adheres to the WAI-ARIA design pattern.
-    </AccordionContent>
-  </AccordionItem>
-</Accordion>
 
-<Accordion type="single" collapsible>
-  <AccordionItem value="item-1">
-    <AccordionTrigger className=''>Is it accessible?</AccordionTrigger>
-    <AccordionContent>
-      Yes. It adheres to the WAI-ARIA design pattern.
-    </AccordionContent>
-  </AccordionItem>
-</Accordion> */}
 
 
 
@@ -96,7 +80,7 @@ const HomePage = async ({ params: { locale } }) => {
      {/* <BlogList posts={posts} /> */}
      
 
-     </TranslaionProvider>
+     {/* </TranslaionProvider> */}
       </div>
 
     
